@@ -1,2 +1,3 @@
 # Backend-Expenses
-source env/bin/activate
+# Command
+- `source env/bin/activate` 
