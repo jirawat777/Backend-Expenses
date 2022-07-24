@@ -1,0 +1,14 @@
+asgiref==3.5.2
+certifi @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_83242e7e-f82d-4a71-8ef2-9d71d212d249gu_wxmeq/croots/recipe/certifi_1655968827803/work/certifi
+Django==4.0.6
+django-cors-headers==3.13.0
+django-filter==22.1
+djangorestframework==3.13.1
+djangorestframework-simplejwt==5.2.0
+importlib-metadata==4.12.0
+Markdown==3.4.1
+Pillow==9.2.0
+PyJWT==2.4.0
+pytz==2022.1
+sqlparse==0.4.2
+zipp==3.8.1
