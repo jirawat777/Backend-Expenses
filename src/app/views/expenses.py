@@ -14,8 +14,7 @@ from rest_framework.permissions import IsAuthenticated
 class ExpenseList(generics.ListAPIView):
     queryset = Expenses.objects.all()
     serializer_class = ExpensesSerializer
-    filter_backend = [filters.SearchFilter,
-                      filters.OrderingFilter, DjangoFilterBackend]
+    filter_backend = [filters.SearchFilter,filters.OrderingFilter, DjangoFilterBackend]
     filterset_fields = ['customer_id']
     orderring_fields = ['new_datetime']
 
@@ -43,6 +42,6 @@ class ExpenseCreate(APIView):
                 destination=destination,
             )
             items.save()
-            return Response(request.data)
+            return Response(request.data,status=status.HTTP_200_OK,message='Create Success')
         else:
             return Response({'code': 'HTTP_400_BAD_REQUEST'}, status=status.HTTP_400_BAD_REQUEST, message='Cannot Create')
