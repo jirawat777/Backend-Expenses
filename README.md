@@ -4,4 +4,4 @@
 
 - `source exp/bin/activate`
 # For Window
-- .\env\Scripts\activate`
+- `.\env\Scripts\activate`
